@@ -1,0 +1,219 @@
+body{
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("img/dontstartnow.png"); */
+    background-size:cover;
+    object-fit:cover;
+    
+}
+.musik{
+    display:flex;
+    flex-direction: column;
+    background-color: #d6c08f;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    -webkit-box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.5);
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align:end;
+    margin-right: 15px;
+    opacity: .7;
+    height: 30px;
+}
+.author{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align:end;
+    margin-right: 15px;
+    opacity: .7;
+    height: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;  
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.img-cont{
+    width: 350px;
+    height: 350px;
+}
+.name{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.forward{
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(252, 252, 252);
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+}
+
+.seekbar{
+    margin-top: 15px;
+    cursor: pointer;
+    appearance: none;
+    /* -webkit-appearance: none; */
+    border-radius: 20px;
+    height: 5px;
+    outline: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, black 0%);
+}
+
+.seekbar::-webkit-slider-thumb{ 
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color:rgb(255,255,255);
+}
+
+.backward{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black;
+    border-radius: 90px;    
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.back{
+    width: 60px;
+    height: 60px;
+}
+.forw{
+    width: 60px;
+    height: 60px;
+}
+.bg{
+    background-image: url("img/dontstartnow.png");
+    filter: blur(10%);
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    overflow: hidden;
+    background-size:cover;
+    object-fit:cover;
+    border-radius: 20px;
+}
+body > .bg{
+    /* z-index: -1; */
+    filter: blur(40px);
+}
+
+.pause{
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black;
+    border-radius: 90px; 
+    width: 50px;
+    height: 50px;
+}
+.pause_button{
+    width: 50px;
+    height: 50px;
+}
+.peremotka{
+    margin-top: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footer{
+    text-align: center;
+    
+    
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding: -1000px;
+    bottom: 15px;
+    right: 150px;
+    width: 100%;
+}
+.text{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.ssilka{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px;
+    left:10px;
+    font-size: 25px;
+    opacity: .5;
+    margin-right: 40px;
+}
+.ssilka:visited{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px;
+    left:10px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    bottom: 10px;
+    position: absolute;
+}
+.logo-text{
+    opacity: 1;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logo-text:visited{
+    opacity: 1;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+body>.footer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
